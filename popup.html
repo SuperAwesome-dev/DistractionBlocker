@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DistractionBlocker</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="icons/icon48.png" alt="DistractionBlocker" class="logo-icon">
+                    <h1>DistractionBlocker</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Block List Content -->
+        <div class="tab-content">
+            <div class="section-header">
+                <h2>Blocked Sites</h2>
+            </div>
+            <div class="input-group">
+                <input type="text" id="blockedSiteInput" placeholder="Enter website (e.g., facebook.com)" />
+                <button id="addBlockedBtn">Add</button>
+            </div>
+            <div class="site-list" id="blockedSitesList">
+                <!-- Blocked sites will be populated here -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <button id="optionsBtn" class="options-btn">Settings</button>
+            <div class="version">v1.0.0</div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
